@@ -1,0 +1,15 @@
+.env
+.DS_Store
+.idea/
+AGENTS.md
+.venv/
+__pycache__/
+.pytest_cache/
+.woo-catalog/
+*.egg-info/
+*.py[cod]
+docs/agent-guides/delivery-efficiency.md
+docs/archive/
+docs/llm-audit-2026-09-19.md
+categories-export-2026-09-16.json
+categories-export-2026-09-16.validation.json

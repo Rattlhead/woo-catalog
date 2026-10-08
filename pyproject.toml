@@ -1,0 +1,22 @@
+[project]
+name = "woo-catalog"
+version = "0.3.0"
+description = "Local JSON import/export CLI for WooCommerce catalogs"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0,<2",
+    "pydantic>=2.7,<3",
+    "python-dotenv>=1.0,<2",
+    "requests>=2.31,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+woo-catalog-mcp = "woo_catalog.mcp_server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
